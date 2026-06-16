@@ -1,0 +1,10 @@
+{
+  "name": "nika-api",
+  "version": "1.0.0",
+  "description": "𝑁𝐼𝐾𝐴 AI - Developed by 𝑁𝐼𝐾𝐴 𝐷𝐸𝑉 🌥️⃝⃕𝆺𝅥𝆹𝅥 🇲🇦",
+  "author": "𝑁𝐼𝐾𝐴 𝐷𝐸𝑉 🌥️⃝⃕𝆺𝅥𝆹𝅥",
+  "scripts": { "start": "node server.js" },
+  "dependencies": {
+    "express": "^4.18.2"
+  }
+}
