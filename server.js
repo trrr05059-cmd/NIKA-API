@@ -1,5 +1,6 @@
-const express = require('express');
+require('dotenv').config(); // 👈 زدنا هاد السطر باش يقرا ملف .env
 
+const express = require('express');
 const app = express();
 const GROQ_API_KEY = process.env.GROQ_API_KEY;
 
@@ -57,7 +58,6 @@ app.get('/api/ai-pro', async (req, res) => {
     }
 });
 
-// يخدم محلياً (node server.js) من دون مشاكل على Vercel (@vercel/node كياخذ module.exports)
 if (require.main === module) {
     const PORT = process.env.PORT || 3000;
     app.listen(PORT, () => console.log(`Server running on port ${PORT}`));
