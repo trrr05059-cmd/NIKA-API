@@ -1,7 +1,8 @@
-require('dotenv').config(); // 👈 زدنا هاد السطر باش يقرا ملف .env
+require('dotenv').config();
 
 const express = require('express');
 const app = express();
+
 const GROQ_API_KEY = process.env.GROQ_API_KEY;
 
 app.get('/api/ai-pro', async (req, res) => {
